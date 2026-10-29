@@ -1,0 +1,71 @@
+{
+  "users": [
+    {
+      "id": "admin-1",
+      "nome": "Administrador",
+      "email": "admin@bussolarh.com",
+      "senha": "123",
+      "empresa": "Bússola RH Oficial",
+      "descricao": "Gestão e Suporte Master",
+      "funcao": "Admin",
+      "isAdmin": true
+    },
+    {
+      "id": "user-2",
+      "nome": "João Silva",
+      "email": "joao@tech.com",
+      "senha": "123456",
+      "empresa": "Tech Solutions Ltda",
+      "descricao": "Inovação e Tecnologia em RH",
+      "funcao": "Gerente de RH",
+      "isAdmin": false
+    },
+    {
+      "id": "1793300243302",
+      "email": "alek@alek",
+      "senha": "alek",
+      "empresa": "alek",
+      "descricao": "alek",
+      "nome": "alek",
+      "funcao": "alek",
+      "isAdmin": false
+    }
+  ],
+  "messages": [
+    {
+      "id": "1793296702679",
+      "remetenteEmail": "admin@bussolarh.com",
+      "destinatarioEmail": "joao@tech.com",
+      "texto": "alek",
+      "data": "2026-10-29T17:58:22.679Z"
+    },
+    {
+      "id": "1793300249714",
+      "remetenteEmail": "alek@alek",
+      "destinatarioEmail": "admin@bussolarh.com",
+      "texto": "alek",
+      "data": "2026-10-29T18:57:29.714Z"
+    },
+    {
+      "id": "1793300306981",
+      "remetenteEmail": "alek@alek",
+      "destinatarioEmail": "admin@bussolarh.com",
+      "texto": "alek",
+      "data": "2026-10-29T18:58:26.981Z"
+    },
+    {
+      "id": "1793300324006",
+      "remetenteEmail": "alek@alek",
+      "destinatarioEmail": "admin@bussolarh.com",
+      "texto": "alek",
+      "data": "2026-10-29T18:58:44.006Z"
+    },
+    {
+      "id": "1793300354045",
+      "remetenteEmail": "admin@bussolarh.com",
+      "destinatarioEmail": "alek@alek",
+      "texto": "alek",
+      "data": "2026-10-29T18:59:14.045Z"
+    }
+  ]
+}
