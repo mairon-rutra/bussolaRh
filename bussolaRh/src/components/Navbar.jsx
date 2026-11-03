@@ -41,42 +41,42 @@ export default function Navbar({ user, onNavigate, onLogout }) {
           
           <li style={{ margin: '20px 0', borderBottom: '1px solid rgba(255, 255, 255, 0.05)', paddingBottom: '12px' }}>
             <a href="#dashboard" onClick={(e) => { e.preventDefault(); setSidebarOpen(false); onNavigate('dashboard'); }} style={{ color: 'var(--texto-principal)', textDecoration: 'none', fontSize: '1.1rem', display: 'block' }}>
-              🏠 Início / Dashboard
+              Início
             </a>
           </li>
 
           <li style={{ margin: '20px 0', borderBottom: '1px solid rgba(255, 255, 255, 0.05)', paddingBottom: '12px' }}>
             <a href="#profile" onClick={(e) => { e.preventDefault(); setSidebarOpen(false); onNavigate(user ? 'profile' : 'login'); }} style={{ color: 'var(--texto-principal)', textDecoration: 'none', fontSize: '1.1rem', display: 'block' }}>
-              👤 {user ? 'Minha Conta' : 'Login / Cadastrar'}
+             {user ? 'Minha Conta' : 'Login / Cadastrar'}
             </a>
           </li>
 
           <li style={{ margin: '20px 0', borderBottom: '1px solid rgba(255, 255, 255, 0.05)', paddingBottom: '12px' }}>
             <a href="#chat" onClick={(e) => { e.preventDefault(); setSidebarOpen(false); onNavigate(user ? 'chat' : 'login'); }} style={{ color: 'var(--texto-principal)', textDecoration: 'none', fontSize: '1.1rem', display: 'block' }}>
-              💬 Chat com ADM
+              Chat
             </a>
           </li>
 
           {user?.isAdmin && (
             <li style={{ margin: '20px 0', borderBottom: '1px solid rgba(255, 255, 255, 0.05)', paddingBottom: '12px' }}>
               <a href="#admin" onClick={(e) => { e.preventDefault(); setSidebarOpen(false); onNavigate('admin'); }} style={{ color: 'var(--azul-claro)', textDecoration: 'none', fontSize: '1.1rem', display: 'block' }}>
-                ⚙️ Painel do ADM
+                Painel de Administardor
               </a>
             </li>
           )}
 
           <li style={{ margin: '20px 0', borderBottom: '1px solid rgba(255, 255, 255, 0.05)', paddingBottom: '12px' }}>
-            <a href="#contatos" onClick={(e) => e.preventDefault()} style={{ color: 'var(--texto-principal)', textDecoration: 'none', fontSize: '1.1rem', display: 'block' }}>📞 Contatos</a>
+            <a href="#contatos" onClick={(e) => e.preventDefault()} style={{ color: 'var(--texto-principal)', textDecoration: 'none', fontSize: '1.1rem', display: 'block' }}>Contatos</a>
           </li>
           
           <li style={{ margin: '20px 0', borderBottom: '1px solid rgba(255, 255, 255, 0.05)', paddingBottom: '12px' }}>
-            <a href="#termos" onClick={(e) => e.preventDefault()} style={{ color: 'var(--texto-principal)', textDecoration: 'none', fontSize: '1.1rem', display: 'block' }}>📄 Termos de Uso</a>
+            <a href="#termos" onClick={(e) => e.preventDefault()} style={{ color: 'var(--texto-principal)', textDecoration: 'none', fontSize: '1.1rem', display: 'block' }}>Termos de Uso</a>
           </li>
 
           {user && (
             <li style={{ margin: '30px 0 20px 0', borderTop: '1px solid rgba(255, 255, 255, 0.1)', paddingTop: '20px' }}>
               <a href="#logout" onClick={(e) => { e.preventDefault(); setSidebarOpen(false); onLogout(); }} style={{ color: 'var(--vermelho)', textDecoration: 'none', fontSize: '1.1rem', display: 'block', fontWeight: 'bold' }}>
-                🚪 Sair da Conta
+                Sair da Conta
               </a>
             </li>
           )}
