@@ -7,9 +7,14 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Dependências (cobre raiz e subpastas como server e bussolaRh)
+node_modules/
+**/node_modules/
+
+# Builds e dists
+dist/
+dist-ssr/
+build/
 *.local
 
 # Editor directories and files
@@ -23,6 +28,6 @@ dist-ssr
 *.sln
 *.sw?
 
-node_modules
+# Variáveis de ambiente
 .env
-dist
+.env.local
